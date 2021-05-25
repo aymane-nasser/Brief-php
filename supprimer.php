@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
           WHERE id=$id";
     $result = mysqli_query($db, $sql);
     if ($result) {
-        header("Location: ./produit.php?produit=successfully deleted");
+        header("Location: ./principale.php?produit=successfully deleted");
     }
 } else {
     header("Location: ./produit.php");
